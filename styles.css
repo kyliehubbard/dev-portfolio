@@ -1,0 +1,56 @@
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#FAF9F6;
+    background-color:black;
+}
+ul{
+    list-style-type:none;
+}
+li{
+    margin:12px;
+}
+a:link, a:visited{
+    color:white;
+    text-decoration:none;
+}
+a:hover{
+    color:hotpink;
+}
+#nav-bar{
+    text-align:right;
+    padding-top:15px;
+    padding-right:25px;
+    font-size:25px;
+    letter-spacing:1px;
+}
+#center{
+    margin-top: 300px;
+}
+#name{
+    text-align:center;
+    font-size:50px;
+}
+#front-end{
+    font-style:italic;
+    text-align:center;
+    font-size:20px;
+    margin-top:-50px;
+}
+.icons{
+    margin:15px auto 500px auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:50px;
+}
+#about-me{
+    text-align:left;
+    padding-left:75px;
+    font-size:x-large;
+    margin-bottom:300px;
+}
+#projects{
+    padding-right:75px;
+    font-size:x-large;
+    text-align:right;
+}
