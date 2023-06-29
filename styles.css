@@ -1,7 +1,16 @@
+
 body{
     font-family:'Montserrat',sans-serif;
     color:#FAF9F6;
-    background-color:black;
+    background-color:#051924;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
+.wrapper{
+    padding:0 10px;
+    margin:0 auto;
+    width:100%;
 }
 ul{
     list-style-type:none;
@@ -23,18 +32,74 @@ a:hover{
     font-size:25px;
     letter-spacing:1px;
 }
-#center{
-    margin-top: 300px;
-}
-#name{
-    text-align:center;
-    font-size:50px;
+.center{
+    margin-top: 350px;
 }
 #front-end{
     font-style:italic;
     text-align:center;
     font-size:20px;
     margin-top:-50px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:relative;
+    cursor:default;
+    width:100%;
+}
+.name{
+    text-align:center;
+    font-size:100px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    cursor:default;
+    margin-top:-10px;
+}
+.name::before, .name::after{
+    content:'Kylie Hubbard';
+    display:block;
+    top:0px;
+    left:0px;
+    position:absolute;
+}
+.name:hover::before{
+    animation: glitch 0.3s linear 6;
+    color:#e91e63;
+    z-index:-2;
+}
+.name:hover::after{
+    animation: glitch 0.3s linear 6 reverse;
+    color:#2196f3;
+    z-index:-1;
+}
+@keyframes glitch{
+    0%{
+        top:0;
+        left:0;
+    }
+    20%{
+        top:-5px;
+        left:-5px;    
+    }
+    40%{
+        top:5px;
+        left:5px;
+        
+    }
+    60%{
+        top:-5px;
+        left:5px;
+    }
+    80%{
+        top:5px;
+        left:-5px;
+    }
+    100%{
+        top:0;
+        left:0;
+    }
 }
 .icons{
     margin:15px auto 500px auto;
@@ -42,15 +107,23 @@ a:hover{
     flex-direction:row;
     justify-content:center;
     gap:50px;
+    cursor:default;
 }
 #about-me{
     text-align:left;
     padding-left:75px;
     font-size:x-large;
     margin-bottom:300px;
+    cursor:default;
 }
 #projects{
     padding-right:75px;
     font-size:x-large;
     text-align:right;
+    cursor:default;
+}
+#background{
+    margin-top:-4000px;
+    width:100%;
+    height:auto;
 }
