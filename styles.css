@@ -32,74 +32,27 @@ a:hover{
     font-size:25px;
     letter-spacing:1px;
 }
-.center{
-    margin-top: 350px;
-}
-#front-end{
-    font-style:italic;
-    text-align:center;
-    font-size:20px;
-    margin-top:-50px;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    position:relative;
-    cursor:default;
-    width:100%;
-}
 .name{
     text-align:center;
     font-size:100px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
     cursor:default;
-    margin-top:-10px;
+    margin-top:100px;
+    text-shadow:2px 2px 500px #fff;
+    animation:fly-in 2s linear;
 }
-.name::before, .name::after{
-    content:'Kylie Hubbard';
-    display:block;
-    top:0px;
-    left:0px;
-    position:absolute;
+@keyframes fly-in{
+    0% {
+        transform:translateY(-500%);
+    }
+    100% {
+        transform:translateY(1%);
+    }
 }
-.name:hover::before{
-    animation: glitch 0.3s linear 6;
-    color:#e91e63;
-    z-index:-2;
-}
-.name:hover::after{
-    animation: glitch 0.3s linear 6 reverse;
-    color:#2196f3;
-    z-index:-1;
-}
-@keyframes glitch{
-    0%{
-        top:0;
-        left:0;
-    }
-    20%{
-        top:-5px;
-        left:-5px;    
-    }
-    40%{
-        top:5px;
-        left:5px;
-        
-    }
-    60%{
-        top:-5px;
-        left:5px;
-    }
-    80%{
-        top:5px;
-        left:-5px;
-    }
-    100%{
-        top:0;
-        left:0;
-    }
+#front-end{
+    text-align:center;
+    font-style:italic;
+    font-size:20px;
+    margin-top:-50px;
 }
 .icons{
     margin:15px auto 500px auto;
@@ -123,7 +76,9 @@ a:hover{
     cursor:default;
 }
 #background{
-    margin-top:-4000px;
+    margin-top:-400px;
     width:100%;
     height:auto;
+    z-index:-5;
+    position:relative;
 }
