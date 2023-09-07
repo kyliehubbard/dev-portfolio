@@ -1,4 +1,4 @@
-# dev-portfolio
+# practice-portfolio
 
 ...
 
